@@ -2,11 +2,20 @@
 
 	body {
   font-family: 'Cinzel', serif;
-  margin: 3% 2% 0 2%;
-  background-color: black;
-  color: white;
+  margin-top: -5%;
+  padding: 90px;
+  background: url(https://scontent.fiev25-2.fna.fbcdn.net/v/t31.0-8/20286756_1778571485494009_1623814617903092784_o.jpg?_nc_cat=108&_nc_sid=2d5d41&_nc_ohc=IYP8587tSMcAX8hB68g&_nc_ht=scontent.fiev25-2.fna&oh=45a26ea533977d0d7325b6dab9b29a25&oe=5F1C9C0F);
+  background-size: 100%;
+  background opacity: 10%;
+  background-attachment: fixed;
+  color: black;
 }
 
+h1 {
+  font-size: 70px;
+  text-align: center;
+  margin: 1%;
+}
 
 h3 {
   font-size: 40px;
@@ -51,29 +60,47 @@ img {
 
 <html>
   <head>
-    <title> Dysphoria (Official)</title>
+    <title> Dysphoria (Official) </title>
 
   </head>
 </html>
 
-<img src="https://www.spirit-of-metal.com/les%20goupes/D/Dysphoria%20(UKR)/pics/994143_logo.jpg">
-  </div>
-  <h3>DeathcoreFromKyiv</h3>
- <div class="line line-margin">
-  </div>
+<div align="right">
 
-  <img id="batman-logo" src="https://scontent.fiev25-2.fna.fbcdn.net/v/t31.0-8/20286756_1778571485494009_1623814617903092784_o.jpg?_nc_cat=108&_nc_sid=2d5d41&_nc_ohc=IYP8587tSMcAX8hB68g&_nc_ht=scontent.fiev25-2.fna&oh=45a26ea533977d0d7325b6dab9b29a25&oe=5F1C9C0F">
+<table>
+<tr>
+<td><a href="https://www.facebook.com/dysphoriaband "_blank">
+  <img title="FB" src="https://www.iconninja.com/files/387/198/566/logo-social-fb-facebook-icon.svg"
+       alt=""width="43" height="43"/></a> </td>
+<td><a href="https://www.instagram.com/dysphoriaband/?hl=en "_blank">
+  <img title="Instagram" src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg"
+       alt=""width="43" height="43"/></a></td>
+  <td><a href="https://www.youtube.com/user/dysphoriakiev "_blank">
+  <img title="YT" src="https://cdn2.iconfinder.com/data/icons/social-18/512/Youtube-512.png"
+       alt=""width="43" height="43"/></a> </td>
+</tr>
+
+</table>
+</div>
+
+ <h1>DYSPHORIA</h1>
+
 
 <h4 id="os-margin">Origin Story</h4>
   <p id="os-text">Beautifully dissonanced, chaotically chopped deathcore of downtempo vibes.
 Operating in Kyiv, Ukraine since 2010.
-3 albums, many local tours, sincere music. Back in 2010 we made fun of deathcore genre clichés.
+3 albums, many local tours, sincere music. Back in 2010 we made fun of deathcore genre cliches.
 	  Now Dysphoria got stuck in uberslow breakdowns infected by mathcore epilepsy
 	  and covered by extra-brutal vocals.
 A good word spread about us fusing deathcore and mathcore genres,
 	  developing our own unique (as unique as it may be among million chugg bands around)
-	  sound and style. </br><a href="https://uk.wikipedia.org/wiki/Dysphoria" target="_blank"><button type="button" class="btn btn-link button-font-size">Click here for more Dyspho info</button></a></p>
-  <div class="line line-margin">
+	  sound and style. </br><a href="https://uk.wikipedia.org/wiki/Dysphoria"
+                               target="_blank"><button type="button"
+                                                       class="btn btn-link button-font-size">Wiki</button></a></p>
+
+
+
+<div class="line line-margin">
   </div>
   <h4>Releases</h4>
   <div class="row">
@@ -99,10 +126,7 @@ A good word spread about us fusing deathcore and mathcore genres,
     </div>
 
 </a>
-      <h4>Links</h4>
-  <div class="row">
-    <div class="col-md-3">
-    <div class="col-md-3">
+
       </a>
 
 
@@ -110,24 +134,45 @@ A good word spread about us fusing deathcore and mathcore genres,
       <div align="center">
 
 
-<table>
-<tr>
-<td><a href="https://www.facebook.com/dysphoriaband "_blank">
-  <img title="FB" src="https://www.iconninja.com/files/387/198/566/logo-social-fb-facebook-icon.svg"
-       alt=""width="150" height="100"/></a> </td>
-<td><a href="https://www.instagram.com/dysphoriaband/?hl=en "_blank">
-  <img title="Instagram" src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg"
-       alt=""width="150" height="100"/></a></td>
-  <td><a href="https://www.youtube.com/user/dysphoriakiev "_blank">
-  <img title="YT" src="https://cdn2.iconfinder.com/data/icons/social-18/512/Youtube-512.png"
-       alt=""width="150" height="100"/></a> </td>
-</tr>
-</table>
 
-      <div style="height: 100px;"></div>
+<div>
+    <h1><a href="/">DysphoNews</a></h1>
+</div>
 
         <div>
-            <p>published: 03.07.2020, 15:29</p>
-            <h2><a href="">Get ready</a></h2>
-            <p>Qlopp Smerti</p>
+            <h2><a href="">Balls!</a></h2>
+          <p>published: 03.07.2020, 15:29</p>
         </div>
+
+
+
+{% for post in posts %}
+    <div>
+        <h1><a href="">Clit_trooper</a></h1>
+        <p>published: 05.07.2020, 19:05</p>
+      <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        <div>
+          <label for="id_subject">About:</label>
+          {{ form.subject.errors }}
+          {{ form.subject }}
+        </div>
+        <div>
+          <label for="id_sender">E-mail:</label>
+          {{ form.sender.errors }}
+          {{ form.sender }}
+        </div>
+        <div>
+          <label for="id_message">Message:</label>
+          {{ form.message.errors }}
+          {{ form.message }}
+        </div>
+        <div>
+          {{ form.copy.errors }}
+          <label for="id_copy">Send me a copy {{ form.copy }}</label>
+        </div>
+        <input type="submit" value="Send"/>
