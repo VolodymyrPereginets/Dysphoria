@@ -1,14 +1,19 @@
 <style>
 
-	body {
-  font-family: 'Cinzel', serif;
-  margin-top: -5%;
-  padding: 90px;
-  background: url(https://scontent.fiev25-2.fna.fbcdn.net/v/t31.0-8/20286756_1778571485494009_1623814617903092784_o.jpg?_nc_cat=108&_nc_sid=2d5d41&_nc_ohc=IYP8587tSMcAX8hB68g&_nc_ht=scontent.fiev25-2.fna&oh=45a26ea533977d0d7325b6dab9b29a25&oe=5F1C9C0F);
-  background-size: 100%;
-  background opacity: 10%;
+body {
+  margin-top: 30%;
+
+  color: red;
+  background-image: url('../static/img/back.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Caveat', cursive;
+  height: 137vh;
+  background-size: 50%;
   background-attachment: fixed;
-  color: black;
+
 }
 
 h1 {
@@ -42,25 +47,13 @@ img {
   margin: auto;
 }
 
-.line {
-  border-color: white;
-  border-style: solid;
-  border-bottom-style: none;
-}
 
-.line-margin {
-  margin: 5% 0 5% 0;
-}
-
-.button-font-size {
-  font-size: 16px;
-}
 
 </style>
 
 <html>
   <head>
-    <title> Dysphoria (Official) </title>
+    <title> F Space </title>
 
   </head>
 </html>
@@ -69,110 +62,15 @@ img {
 
 <table>
 <tr>
-<td><a href="https://www.facebook.com/dysphoriaband "_blank">
+<td><a href="https://www.facebook.com/F-Space-105674658005760 "_blank">
   <img title="FB" src="https://www.iconninja.com/files/387/198/566/logo-social-fb-facebook-icon.svg"
-       alt=""width="43" height="43"/></a> </td>
-<td><a href="https://www.instagram.com/dysphoriaband/?hl=en "_blank">
+       alt=""width="79" height="79"/></a> </td>
+<td><a href="https://www.instagram.com/fspace_kyiv "_blank">
   <img title="Instagram" src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg"
-       alt=""width="43" height="43"/></a></td>
-  <td><a href="https://www.youtube.com/user/dysphoriakiev "_blank">
-  <img title="YT" src="https://cdn2.iconfinder.com/data/icons/social-18/512/Youtube-512.png"
-       alt=""width="43" height="43"/></a> </td>
+       alt=""width="70" height="70"/></a></td>
 </tr>
 
 </table>
 </div>
 
- <h1>DYSPHORIA</h1>
 
-
-<h4 id="os-margin">Origin Story</h4>
-  <p id="os-text">Beautifully dissonanced, chaotically chopped deathcore of downtempo vibes.
-Operating in Kyiv, Ukraine since 2010.
-3 albums, many local tours, sincere music. Back in 2010 we made fun of deathcore genre cliches.
-	  Now Dysphoria got stuck in uberslow breakdowns infected by mathcore epilepsy
-	  and covered by extra-brutal vocals.
-A good word spread about us fusing deathcore and mathcore genres,
-	  developing our own unique (as unique as it may be among million chugg bands around)
-	  sound and style. </br><a href="https://uk.wikipedia.org/wiki/Dysphoria"
-                               target="_blank"><button type="button"
-                                                       class="btn btn-link button-font-size">Wiki</button></a></p>
-
-
-
-<div class="line line-margin">
-  </div>
-  <h4>Releases</h4>
-  <div class="row">
-    <div class="col-md-3">
-		</a>
-      <p>Satyriasis XXI</p>
-    </div>
-      <a href="https://chugcore.bandcamp.com/album/satyriasis-xxi" target="_blank">
-        <img class="img-rounded" src="https://f4.bcbits.com/img/a3728499299_10.jpg">
-      </a>
-      <p>To The Perfect Form of Modern Species</p>
-    </div>
-    <div class="col-md-3">
-      <a href="https://chugcore.bandcamp.com/album/to-the-perfect-form-of-modern-species" target="_blank">
-        <img class="img-rounded" src="https://f4.bcbits.com/img/a3365172065_10.jpg">
-      </a>
-      <p>The Apogee</p>
-    </div>
-    <div class="col-md-3">
-      <a href="https://chugcore.bandcamp.com/album/the-apogee" target="_blank">
-        <img class="img-rounded" src="https://f4.bcbits.com/img/a2912677947_10.jpg">
-      </a>
-    </div>
-
-</a>
-
-      </a>
-
-
-
-      <div align="center">
-
-
-
-<div>
-    <h1><a href="/">DysphoNews</a></h1>
-</div>
-
-        <div>
-            <h2><a href="">Balls!</a></h2>
-          <p>published: 03.07.2020, 15:29</p>
-        </div>
-
-
-
-{% for post in posts %}
-    <div>
-        <h1><a href="">Clit_trooper</a></h1>
-        <p>published: 05.07.2020, 19:05</p>
-      <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
-
-        {% csrf_token %}
-        {{ form.non_field_errors }}
-        <div>
-          <label for="id_subject">About:</label>
-          {{ form.subject.errors }}
-          {{ form.subject }}
-        </div>
-        <div>
-          <label for="id_sender">E-mail:</label>
-          {{ form.sender.errors }}
-          {{ form.sender }}
-        </div>
-        <div>
-          <label for="id_message">Message:</label>
-          {{ form.message.errors }}
-          {{ form.message }}
-        </div>
-        <div>
-          {{ form.copy.errors }}
-          <label for="id_copy">Send me a copy {{ form.copy }}</label>
-        </div>
-        <input type="submit" value="Send"/>
